@@ -1,0 +1,99 @@
+.App {
+    height: 100vh; /* viewport height */
+    width: 100vw; /* viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card  {
+    background-color: black;
+    width: 960px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /*brings back the border radius*/
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+}
+
+.bg-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.nft-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-video {
+    width: 400px;
+    height: 400px;
+    padding: 10px 10px;
+}
+
+.info {
+    color: white;
+    padding-top: 150px;
+}
+
+.info button {
+    display: inline-block;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 13px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.info button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+  }
+  
+  .info button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.25s;
+  }
+  
+  .info button:hover span {
+    padding-right: 25px;
+  }
+  
+  .info button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.footer {
+    height: 30px;
+    color: white;
+    font-size: large;
+    background-color: #1817dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
